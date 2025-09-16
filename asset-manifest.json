@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NOME_DO_REPOSITORIO/static/css/main.bebed213.css",
+    "main.js": "/NOME_DO_REPOSITORIO/static/js/main.5460ef92.js",
+    "static/js/453.100140f7.chunk.js": "/NOME_DO_REPOSITORIO/static/js/453.100140f7.chunk.js",
+    "index.html": "/NOME_DO_REPOSITORIO/index.html",
+    "main.bebed213.css.map": "/NOME_DO_REPOSITORIO/static/css/main.bebed213.css.map",
+    "main.5460ef92.js.map": "/NOME_DO_REPOSITORIO/static/js/main.5460ef92.js.map",
+    "453.100140f7.chunk.js.map": "/NOME_DO_REPOSITORIO/static/js/453.100140f7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bebed213.css",
+    "static/js/main.5460ef92.js"
+  ]
+}
