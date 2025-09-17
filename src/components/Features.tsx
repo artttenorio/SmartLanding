@@ -5,19 +5,53 @@ import {
   CodeBracketIcon,
   BoltIcon,
   PaintBrushIcon,
-  MagnifyingGlassIcon
+  MagnifyingGlassIcon,
+  ChartBarIcon
 } from '@heroicons/react/24/outline';
-import { features } from '../data';
-
-const iconMap = {
-  DevicePhoneMobileIcon,
-  CodeBracketIcon,
-  BoltIcon,
-  PaintBrushIcon,
-  MagnifyingGlassIcon
-};
+import { useTranslation } from 'react-i18next';
 
 const Features: React.FC = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      id: 'responsive',
+      title: t('features.responsive.title'),
+      description: t('features.responsive.description'),
+      icon: DevicePhoneMobileIcon,
+    },
+    {
+      id: 'seo',
+      title: t('features.seo.title'),
+      description: t('features.seo.description'),
+      icon: MagnifyingGlassIcon,
+    },
+    {
+      id: 'conversion',
+      title: t('features.conversion.title'),
+      description: t('features.conversion.description'),
+      icon: BoltIcon,
+    },
+    {
+      id: 'support',
+      title: t('features.support.title'),
+      description: t('features.support.description'),
+      icon: CodeBracketIcon,
+    },
+    {
+      id: 'updates',
+      title: t('features.updates.title'),
+      description: t('features.updates.description'),
+      icon: PaintBrushIcon,
+    },
+    {
+      id: 'analytics',
+      title: t('features.analytics.title'),
+      description: t('features.analytics.description'),
+      icon: ChartBarIcon,
+    }
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -51,10 +85,10 @@ const Features: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose SmartLanding?
+            {t('features.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our templates are crafted with industry best practices and designed to convert visitors into customers.
+            {t('features.subtitle')}
           </p>
         </motion.div>
 
@@ -67,7 +101,7 @@ const Features: React.FC = () => {
           viewport={{ once: true }}
         >
           {features.map((feature, index) => {
-            const IconComponent = iconMap[feature.icon as keyof typeof iconMap];
+            const IconComponent = feature.icon;
 
             return (
               <motion.div
@@ -111,19 +145,16 @@ const Features: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <p className="text-lg text-gray-600 mb-6">
-            Ready to see what makes our templates special?
-          </p>
           <motion.button
             onClick={() => {
-              const element = document.getElementById('templates');
+              const element = document.getElementById('services');
               if (element) element.scrollIntoView({ behavior: 'smooth' });
             }}
             className="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-lg text-lg font-medium hover:bg-primary-700 transition-colors duration-200 shadow-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            View Templates
+            {t('hero.secondary_cta')}
           </motion.button>
         </motion.div>
       </div>

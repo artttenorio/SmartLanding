@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -13,22 +16,15 @@ const Footer: React.FC = () => {
 
   const footerLinks = {
     product: [
-      { label: 'Templates', id: 'templates' },
-      { label: 'Features', id: 'features' },
-      { label: 'Pricing', id: 'pricing' },
-      { label: 'FAQ', id: 'faq' }
+      { label: t('footer.links.services'), id: 'services' },
+      { label: t('header.nav.features'), id: 'features' },
+      { label: t('header.nav.faq'), id: 'faq' }
     ],
     company: [
-      { label: 'About Us', href: 'mailto:hello@smartlanding.com' },
-      { label: 'Contact', id: 'contact' },
-      { label: 'Support', href: 'mailto:support@smartlanding.com' },
-      { label: 'Privacy Policy', href: '#' }
-    ],
-    resources: [
-      { label: 'Documentation', href: '#' },
-      { label: 'Tutorials', href: '#' },
-      { label: 'Blog', href: '#' },
-      { label: 'Updates', href: '#' }
+      { label: t('footer.links.about'), href: 'mailto:hello@smartlanding.com' },
+      { label: t('footer.links.contact'), id: 'contact' },
+      { label: t('footer.links.privacy'), href: '#' },
+      { label: t('footer.links.terms'), href: '#' }
     ]
   };
 
@@ -83,7 +79,7 @@ const Footer: React.FC = () => {
               >
                 <path d="M13 3L4 14h7v7l9-11h-7V3z" />
               </svg>
-              <span className="ml-2 text-2xl font-bold">SmartLanding</span>
+              <span className="ml-2 text-2xl font-bold">{t('footer.brand')}</span>
             </motion.div>
 
             <motion.p
@@ -93,7 +89,7 @@ const Footer: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Beautiful website templates for companies. Launch professional sites in hours, not weeks.
+              {t('footer.description')}
             </motion.p>
 
             {/* Social Links */}
@@ -126,7 +122,7 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="text-lg font-semibold mb-4">Product</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('header.nav.services')}</h3>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
@@ -148,7 +144,7 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.contact.title')}</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -172,58 +168,7 @@ const Footer: React.FC = () => {
             </ul>
           </motion.div>
 
-          {/* Resources Links */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
         </div>
-
-        {/* Newsletter Signup */}
-        <motion.div
-          className="mt-16 pt-8 border-t border-gray-800"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <div className="max-w-md">
-            <h3 className="text-lg font-semibold mb-4">Stay Updated</h3>
-            <p className="text-gray-300 mb-4">
-              Get notified when we release new templates and features.
-            </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-white placeholder-gray-400"
-              />
-              <motion.button
-                className="px-6 py-3 bg-primary-600 text-white rounded-r-lg hover:bg-primary-700 transition-colors duration-200 font-medium"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Subscribe
-              </motion.button>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       {/* Bottom Bar */}
@@ -238,20 +183,17 @@ const Footer: React.FC = () => {
           <div className="md:flex md:items-center md:justify-between">
             <div className="text-center md:text-left">
               <p className="text-gray-400">
-                © {currentYear} SmartLanding. All rights reserved.
+                {t('footer.copyright', { year: currentYear })}
               </p>
             </div>
 
             <div className="mt-4 md:mt-0">
               <div className="flex justify-center md:justify-end space-x-6">
                 <a href="/terms" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
-                  Terms of Service
+                  {t('footer.links.terms')}
                 </a>
                 <a href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
-                  Privacy Policy
-                </a>
-                <a href="/cookies" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
-                  Cookie Policy
+                  {t('footer.links.privacy')}
                 </a>
               </div>
             </div>

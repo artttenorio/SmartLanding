@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from 'react-i18next';
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -38,9 +41,7 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Launch professional{' '}
-                <span className="text-accent-400">company websites</span>{' '}
-                in hours — not weeks.
+                {t('hero.title')}
               </h1>
 
               <motion.p
@@ -49,7 +50,7 @@ const Hero: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                High-converting templates, customizable, and battle-tested for businesses of all sizes.
+                {t('hero.subtitle')}
               </motion.p>
 
               <motion.div
@@ -64,40 +65,20 @@ const Hero: React.FC = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Get Templates
+                  {t('hero.cta')}
                   <ArrowRightIcon className="ml-2 h-5 w-5" />
                 </motion.a>
 
                 <motion.button
-                  onClick={() => scrollToSection('templates')}
+                  onClick={() => scrollToSection('services')}
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors duration-200"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Browse Templates
+                  {t('hero.secondary_cta')}
                 </motion.button>
               </motion.div>
 
-              {/* Stats */}
-              <motion.div
-                className="mt-12 grid grid-cols-3 gap-4"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-white">50+</div>
-                  <div className="text-sm text-white/70">Templates</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-white">10k+</div>
-                  <div className="text-sm text-white/70">Happy Customers</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-white">99%</div>
-                  <div className="text-sm text-white/70">Satisfaction</div>
-                </div>
-              </motion.div>
             </motion.div>
           </div>
 

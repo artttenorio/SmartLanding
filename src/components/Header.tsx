@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from 'react-i18next';
+import LanguageToggle from './LanguageToggle';
 
 const Header: React.FC = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -24,12 +27,10 @@ const Header: React.FC = () => {
   };
 
   const navItems = [
-    { label: 'Templates', id: 'templates' },
-    { label: 'Features', id: 'features' },
-    { label: 'Pricing', id: 'pricing' },
-    { label: 'Testimonials', id: 'testimonials' },
-    { label: 'FAQ', id: 'faq' },
-    { label: 'Contact', id: 'contact' }
+    { label: t('header.nav.services'), id: 'services' },
+    { label: t('header.nav.features'), id: 'features' },
+    { label: t('header.nav.faq'), id: 'faq' },
+    { label: t('header.nav.contact'), id: 'contact' }
   ];
 
   return (
@@ -60,7 +61,7 @@ const Header: React.FC = () => {
                 <path d="M13 3L4 14h7v7l9-11h-7V3z" />
               </svg>
               <span className={`ml-2 text-xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                SmartLanding
+                {t('header.brand')}
               </span>
             </div>
           </motion.div>
@@ -80,15 +81,17 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* CTA Button & Mobile Menu Button */}
+          {/* Language Toggle, CTA Button & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
+            <LanguageToggle isScrolled={isScrolled} />
+
             <motion.a
               href="mailto:hello@smartlanding.com"
               className="hidden sm:inline-flex bg-primary-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Get Templates
+              {t('header.cta')}
             </motion.a>
 
             {/* Mobile menu button */}
@@ -131,7 +134,7 @@ const Header: React.FC = () => {
               href="mailto:hello@smartlanding.com"
               className="block bg-primary-600 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-primary-700 text-center mt-4"
             >
-              Get Templates
+              {t('header.cta')}
             </a>
           </div>
         </motion.div>

@@ -1,14 +1,36 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
-import { faqData } from '../data';
+import { useTranslation } from 'react-i18next';
 
 const FAQ: React.FC = () => {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleQuestion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  // Since FAQ content is likely to be specific and might not need many items for now,
+  // I'll create a minimal FAQ structure. In real usage, this could be expanded.
+  const faqData = [
+    {
+      question: "What services do you offer?",
+      answer: "We offer Landing Pages (Intermediary and Premium levels) and Basic Apps including Digital Catalogs, Service Scheduling, Interactive Forms, and Simple Dashboards."
+    },
+    {
+      question: "How do I get started?",
+      answer: "Simply contact us at hello@smartlanding.com and we'll discuss your specific needs and provide a customized solution."
+    },
+    {
+      question: "What's included in the Premium Landing Page service?",
+      answer: "Premium includes everything from Intermediary plus advanced design with custom colors and visual identity, basic SEO optimization, and simple A/B testing capabilities."
+    },
+    {
+      question: "Can you help with integrations?",
+      answer: "Yes! Our Intermediary and Premium Landing Page services include integration with popular email marketing tools like Mailchimp, Brevo, and ConvertKit."
+    }
+  ];
 
   return (
     <section id="faq" className="py-20 bg-gray-50">
@@ -22,10 +44,10 @@ const FAQ: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Frequently Asked Questions
+            {t('faq.title')}
           </h2>
           <p className="text-xl text-gray-600">
-            Everything you need to know about our templates and services.
+            {t('faq.subtitle')}
           </p>
         </motion.div>
 

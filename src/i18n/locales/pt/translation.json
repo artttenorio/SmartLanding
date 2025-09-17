@@ -1,0 +1,119 @@
+{
+  "header": {
+    "brand": "SmartLanding",
+    "nav": {
+      "services": "Serviços",
+      "features": "Recursos",
+      "faq": "FAQ",
+      "contact": "Contato"
+    },
+    "cta": "Começar"
+  },
+  "hero": {
+    "title": "Crie Landing Pages Profissionais que Convertem",
+    "subtitle": "Crie landing pages incríveis e de alta conversão e aplicativos simples para o seu negócio. Sem necessidade de programação.",
+    "cta": "Começar",
+    "secondary_cta": "Ver Serviços"
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Escolha a solução perfeita para as necessidades do seu negócio",
+    "landing_pages": {
+      "title": "Landing Pages",
+      "intermediary": {
+        "title": "Intermediário",
+        "description": "Tudo do Básico +",
+        "features": [
+          "Integração com ferramentas de email marketing (Mailchimp, Brevo, ConvertKit etc.)",
+          "Formulário de captura de leads configurado"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "description": "Tudo do Intermediário +",
+        "features": [
+          "Design mais avançado (cores personalizadas, identidade visual, imagens otimizadas)",
+          "SEO básico (meta tags, estrutura otimizada para mecanismos de busca)",
+          "Teste A/B simples para comparar versões da página"
+        ]
+      }
+    },
+    "basic_apps": {
+      "title": "Aplicativos Básicos (No-code)",
+      "digital_catalog": {
+        "title": "Catálogo Digital",
+        "description": "Exibição de produtos ou serviços como aplicativo"
+      },
+      "scheduling": {
+        "title": "Agendamento de Serviços",
+        "description": "Agendamento online com calendário integrado"
+      },
+      "forms": {
+        "title": "Formulários Interativos e Checklists",
+        "description": "Coleta de dados e rastreamento digital de tarefas"
+      },
+      "dashboard": {
+        "title": "Dashboard Simples",
+        "description": "Visualização organizada de dados (baseado em planilhas)"
+      }
+    },
+    "cta": "Entre em Contato"
+  },
+  "features": {
+    "title": "Por que Escolher a SmartLanding?",
+    "subtitle": "Fornecemos tudo o que você precisa para criar soluções web profissionais",
+    "responsive": {
+      "title": "Design Responsivo",
+      "description": "Perfeito em todos os dispositivos - desktop, tablet e mobile"
+    },
+    "seo": {
+      "title": "Otimizado para SEO",
+      "description": "Construído pensando nos mecanismos de busca para melhor visibilidade"
+    },
+    "conversion": {
+      "title": "Focado em Conversão",
+      "description": "Projetado para transformar visitantes em clientes"
+    },
+    "support": {
+      "title": "Suporte Especializado",
+      "description": "Obtenha ajuda quando precisar de nossa equipe experiente"
+    },
+    "updates": {
+      "title": "Atualizações Regulares",
+      "description": "Mantenha seu site atualizado com melhorias contínuas"
+    },
+    "analytics": {
+      "title": "Pronto para Analytics",
+      "description": "Acompanhe o desempenho com integração de analytics incorporada"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Obtenha respostas para dúvidas comuns sobre nossos serviços"
+  },
+  "footer": {
+    "brand": "SmartLanding",
+    "description": "Landing pages profissionais e aplicativos simples para o seu negócio.",
+    "links": {
+      "services": "Serviços",
+      "about": "Sobre",
+      "contact": "Contato",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço"
+    },
+    "contact": {
+      "title": "Contato",
+      "email": "Email",
+      "phone": "Telefone"
+    },
+    "social": {
+      "title": "Siga-nos"
+    },
+    "copyright": "© 2024 SmartLanding. Todos os direitos reservados."
+  },
+  "language": {
+    "toggle": "Idioma",
+    "en": "English",
+    "pt": "Português"
+  }
+}

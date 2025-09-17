@@ -1,0 +1,119 @@
+{
+  "header": {
+    "brand": "SmartLanding",
+    "nav": {
+      "services": "Services",
+      "features": "Features",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "cta": "Get Started"
+  },
+  "hero": {
+    "title": "Build Professional Landing Pages That Convert",
+    "subtitle": "Create stunning, high-converting landing pages and simple apps for your business. No coding required.",
+    "cta": "Get Started",
+    "secondary_cta": "View Services"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Choose the perfect solution for your business needs",
+    "landing_pages": {
+      "title": "Landing Pages",
+      "intermediary": {
+        "title": "Intermediary",
+        "description": "Everything from Basic +",
+        "features": [
+          "Integration with email marketing tools (Mailchimp, Brevo, ConvertKit etc.)",
+          "Configured lead capture form"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "description": "Everything from Intermediary +",
+        "features": [
+          "More advanced design (custom colors, visual identity, optimized images)",
+          "Basic SEO (meta tags, structure optimized for search engines)",
+          "Simple A/B testing to compare versions of the page"
+        ]
+      }
+    },
+    "basic_apps": {
+      "title": "Basic Apps (No-code)",
+      "digital_catalog": {
+        "title": "Digital Catalog",
+        "description": "Display of products or services as an app"
+      },
+      "scheduling": {
+        "title": "Service Scheduling",
+        "description": "Online scheduling with integrated calendar"
+      },
+      "forms": {
+        "title": "Interactive Forms and Checklists",
+        "description": "Data collection and digital task tracking"
+      },
+      "dashboard": {
+        "title": "Simple Dashboard",
+        "description": "Organized data visualization (spreadsheet-based)"
+      }
+    },
+    "cta": "Contact Us"
+  },
+  "features": {
+    "title": "Why Choose SmartLanding?",
+    "subtitle": "We provide everything you need to create professional web solutions",
+    "responsive": {
+      "title": "Responsive Design",
+      "description": "Perfect on all devices - desktop, tablet, and mobile"
+    },
+    "seo": {
+      "title": "SEO Optimized",
+      "description": "Built with search engines in mind for better visibility"
+    },
+    "conversion": {
+      "title": "Conversion Focused",
+      "description": "Designed to turn visitors into customers"
+    },
+    "support": {
+      "title": "Expert Support",
+      "description": "Get help when you need it from our experienced team"
+    },
+    "updates": {
+      "title": "Regular Updates",
+      "description": "Keep your site fresh with continuous improvements"
+    },
+    "analytics": {
+      "title": "Analytics Ready",
+      "description": "Track performance with built-in analytics integration"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get answers to common questions about our services"
+  },
+  "footer": {
+    "brand": "SmartLanding",
+    "description": "Professional landing pages and simple apps for your business.",
+    "links": {
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "copyright": "© 2024 SmartLanding. All rights reserved."
+  },
+  "language": {
+    "toggle": "Language",
+    "en": "English",
+    "pt": "Português"
+  }
+}

@@ -4,9 +4,7 @@ import SEO from './components/SEO';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import Templates from './components/Templates';
-import Testimonials from './components/Testimonials';
-import Pricing from './components/Pricing';
+import Services from './components/Services';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
@@ -18,9 +16,7 @@ function App() {
       <main>
         <Hero />
         <Features />
-        <Templates />
-        <Testimonials />
-        <Pricing />
+        <Services />
         <FAQ />
       </main>
       <Footer />
