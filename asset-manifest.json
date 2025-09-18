@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SmartLanding/static/css/main.bebed213.css",
-    "main.js": "/SmartLanding/static/js/main.b470ce7d.js",
+    "main.css": "/SmartLanding/static/css/main.7c14a64f.css",
+    "main.js": "/SmartLanding/static/js/main.e8cf240d.js",
     "static/js/453.100140f7.chunk.js": "/SmartLanding/static/js/453.100140f7.chunk.js",
     "index.html": "/SmartLanding/index.html",
-    "main.bebed213.css.map": "/SmartLanding/static/css/main.bebed213.css.map",
-    "main.b470ce7d.js.map": "/SmartLanding/static/js/main.b470ce7d.js.map",
+    "main.7c14a64f.css.map": "/SmartLanding/static/css/main.7c14a64f.css.map",
+    "main.e8cf240d.js.map": "/SmartLanding/static/js/main.e8cf240d.js.map",
     "453.100140f7.chunk.js.map": "/SmartLanding/static/js/453.100140f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bebed213.css",
-    "static/js/main.b470ce7d.js"
+    "static/css/main.7c14a64f.css",
+    "static/js/main.e8cf240d.js"
   ]
 }
