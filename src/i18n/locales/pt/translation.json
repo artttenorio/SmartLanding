@@ -3,6 +3,7 @@
     "brand": "SmartLanding",
     "nav": {
       "services": "Serviços",
+      "portfolio": "Portfólio",
       "features": "Recursos",
       "faq": "FAQ",
       "contact": "Contato"
@@ -134,6 +135,37 @@
       "title": "Siga-nos"
     },
     "copyright": "© 2024 SmartLanding. Todos os direitos reservados."
+  },
+  "portfolio": {
+    "title": "Nosso Portfólio",
+    "subtitle": "Confira alguns dos nossos trabalhos recentes e projetos de sucesso",
+    "projects": [
+      {
+        "title": "Loja de Moda E-commerce",
+        "description": "Landing page moderna com carrinho de compras integrado"
+      },
+      {
+        "title": "Landing Page de Restaurante",
+        "description": "Design responsivo com sistema de reservas online"
+      },
+      {
+        "title": "Lançamento de Produto SaaS",
+        "description": "Página otimizada para conversão com teste A/B"
+      },
+      {
+        "title": "Site de Clínica Médica",
+        "description": "Design profissional com agendamento de consultas"
+      },
+      {
+        "title": "Portfólio Imobiliário",
+        "description": "Vitrine de propriedades com formulários de captação"
+      },
+      {
+        "title": "Agência de Marketing Digital",
+        "description": "Landing page multi-serviços com estudos de caso"
+      }
+    ],
+    "view_project": "Ver Projeto"
   },
   "language": {
     "toggle": "Idioma",

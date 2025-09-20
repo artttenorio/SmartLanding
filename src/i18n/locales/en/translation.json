@@ -3,6 +3,7 @@
     "brand": "SmartLanding",
     "nav": {
       "services": "Services",
+      "portfolio": "Portfolio",
       "features": "Features",
       "faq": "FAQ",
       "contact": "Contact"
@@ -134,6 +135,37 @@
       "title": "Follow Us"
     },
     "copyright": "© 2024 SmartLanding. All rights reserved."
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Check out some of our recent work and successful projects",
+    "projects": [
+      {
+        "title": "E-commerce Fashion Store",
+        "description": "Modern landing page with integrated shopping cart"
+      },
+      {
+        "title": "Restaurant Landing Page",
+        "description": "Responsive design with online reservation system"
+      },
+      {
+        "title": "SaaS Product Launch",
+        "description": "Conversion-optimized page with A/B testing"
+      },
+      {
+        "title": "Medical Clinic Website",
+        "description": "Professional design with appointment booking"
+      },
+      {
+        "title": "Real Estate Portfolio",
+        "description": "Property showcase with lead generation forms"
+      },
+      {
+        "title": "Digital Marketing Agency",
+        "description": "Multi-service landing page with case studies"
+      }
+    ],
+    "view_project": "View Project"
   },
   "language": {
     "toggle": "Language",

@@ -28,6 +28,7 @@ const Header: React.FC = () => {
 
   const navItems = [
     { label: t('header.nav.services'), id: 'services' },
+    { label: t('header.nav.portfolio'), id: 'portfolio' },
     { label: t('header.nav.features'), id: 'features' },
     { label: t('header.nav.faq'), id: 'faq' },
     { label: t('header.nav.contact'), id: 'contact' }
