@@ -89,7 +89,31 @@
   },
   "faq": {
     "title": "Perguntas Frequentes",
-    "subtitle": "Obtenha respostas para dúvidas comuns sobre nossos serviços"
+    "subtitle": "Obtenha respostas para dúvidas comuns sobre nossos serviços",
+    "questions": [
+      {
+        "question": "Quais serviços vocês oferecem?",
+        "answer": "Oferecemos Landing Pages (níveis Intermediário e Premium) e Aplicativos Básicos incluindo Catálogos Digitais, Agendamento de Serviços, Formulários Interativos e Dashboards Simples."
+      },
+      {
+        "question": "Como posso começar?",
+        "answer": "Simplesmente entre em contato conosco em hello@smartlanding.com e discutiremos suas necessidades específicas e forneceremos uma solução personalizada."
+      },
+      {
+        "question": "O que está incluído no serviço Premium de Landing Page?",
+        "answer": "O Premium inclui tudo do Intermediário mais design avançado com cores personalizadas e identidade visual, otimização básica de SEO e capacidades simples de teste A/B."
+      },
+      {
+        "question": "Vocês podem ajudar com integrações?",
+        "answer": "Sim! Nossos serviços de Landing Page Intermediário e Premium incluem integração com ferramentas populares de email marketing como Mailchimp, Brevo e ConvertKit."
+      }
+    ],
+    "contact_section": {
+      "title": "Ainda tem dúvidas?",
+      "description": "Nossa equipe de suporte está aqui para ajudar. Entre em contato e responderemos em até 24 horas.",
+      "email_button": "Suporte por Email",
+      "contact_button": "Entre em Contato"
+    }
   },
   "footer": {
     "brand": "SmartLanding",

@@ -11,26 +11,10 @@ const FAQ: React.FC = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Since FAQ content is likely to be specific and might not need many items for now,
-  // I'll create a minimal FAQ structure. In real usage, this could be expanded.
-  const faqData = [
-    {
-      question: "What services do you offer?",
-      answer: "We offer Landing Pages (Intermediary and Premium levels) and Basic Apps including Digital Catalogs, Service Scheduling, Interactive Forms, and Simple Dashboards."
-    },
-    {
-      question: "How do I get started?",
-      answer: "Simply contact us at hello@smartlanding.com and we'll discuss your specific needs and provide a customized solution."
-    },
-    {
-      question: "What's included in the Premium Landing Page service?",
-      answer: "Premium includes everything from Intermediary plus advanced design with custom colors and visual identity, basic SEO optimization, and simple A/B testing capabilities."
-    },
-    {
-      question: "Can you help with integrations?",
-      answer: "Yes! Our Intermediary and Premium Landing Page services include integration with popular email marketing tools like Mailchimp, Brevo, and ConvertKit."
-    }
-  ];
+  const faqData = t('faq.questions', { returnObjects: true }) as Array<{
+    question: string;
+    answer: string;
+  }>;
 
   return (
     <section id="faq" className="py-20 bg-gray-50">
@@ -114,10 +98,10 @@ const FAQ: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Still have questions?
+            {t('faq.contact_section.title')}
           </h3>
           <p className="text-gray-600 mb-6">
-            Our support team is here to help. Get in touch and we'll respond within 24 hours.
+            {t('faq.contact_section.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
@@ -126,7 +110,7 @@ const FAQ: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Email Support
+              {t('faq.contact_section.email_button')}
             </motion.a>
             <motion.button
               onClick={() => {
@@ -137,7 +121,7 @@ const FAQ: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Contact Us
+              {t('faq.contact_section.contact_button')}
             </motion.button>
           </div>
         </motion.div>
