@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { useTranslation } from "react-i18next";
 
 const Portfolio: React.FC = () => {
   const { t } = useTranslation();
@@ -9,52 +9,58 @@ const Portfolio: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: t('portfolio.projects.0.title'),
-      description: t('portfolio.projects.0.description'),
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop&crop=center',
-      url: 'https://example.com/ecommerce-fashion',
-      category: 'E-commerce'
+      title: t("portfolio.projects.0.title"),
+      description: t("portfolio.projects.0.description"),
+      image:
+        "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop&crop=center",
+      url: "https://smart-landing-curso-online.vercel.app/",
+      category: "Education",
     },
     {
       id: 2,
-      title: t('portfolio.projects.1.title'),
-      description: t('portfolio.projects.1.description'),
-      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop&crop=center',
-      url: 'https://example.com/restaurant',
-      category: 'Restaurant'
+      title: t("portfolio.projects.1.title"),
+      description: t("portfolio.projects.1.description"),
+      image:
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop&crop=center",
+      url: "https://example.com/restaurant",
+      category: "Restaurant",
     },
     {
       id: 3,
-      title: t('portfolio.projects.2.title'),
-      description: t('portfolio.projects.2.description'),
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center',
-      url: 'https://example.com/saas-product',
-      category: 'SaaS'
+      title: t("portfolio.projects.2.title"),
+      description: t("portfolio.projects.2.description"),
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+      url: "https://example.com/saas-product",
+      category: "SaaS",
     },
     {
       id: 4,
-      title: t('portfolio.projects.3.title'),
-      description: t('portfolio.projects.3.description'),
-      image: 'https://images.unsplash.com/photo-1559757175-8a6c315f97c4?w=600&h=400&fit=crop&crop=center',
-      url: 'https://example.com/medical-clinic',
-      category: 'Healthcare'
+      title: t("portfolio.projects.3.title"),
+      description: t("portfolio.projects.3.description"),
+      image:
+        "https://images.unsplash.com/photo-1559757175-8a6c315f97c4?w=600&h=400&fit=crop&crop=center",
+      url: "https://example.com/medical-clinic",
+      category: "Healthcare",
     },
     {
       id: 5,
-      title: t('portfolio.projects.4.title'),
-      description: t('portfolio.projects.4.description'),
-      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop&crop=center',
-      url: 'https://example.com/real-estate',
-      category: 'Real Estate'
+      title: t("portfolio.projects.4.title"),
+      description: t("portfolio.projects.4.description"),
+      image:
+        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop&crop=center",
+      url: "https://example.com/real-estate",
+      category: "Real Estate",
     },
     {
       id: 6,
-      title: t('portfolio.projects.5.title'),
-      description: t('portfolio.projects.5.description'),
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop&crop=center',
-      url: 'https://example.com/marketing-agency',
-      category: 'Marketing'
-    }
+      title: t("portfolio.projects.5.title"),
+      description: t("portfolio.projects.5.description"),
+      image:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop&crop=center",
+      url: "https://example.com/marketing-agency",
+      category: "Marketing",
+    },
   ];
 
   const containerVariants = {
@@ -63,17 +69,17 @@ const Portfolio: React.FC = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { y: 50, opacity: 0 },
     visible: {
       y: 0,
-      opacity: 1
-    }
+      opacity: 1,
+    },
   };
 
   return (
@@ -87,10 +93,10 @@ const Portfolio: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {t('portfolio.title')}
+            {t("portfolio.title")}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t('portfolio.subtitle')}
+            {t("portfolio.subtitle")}
           </p>
         </motion.div>
 
@@ -136,7 +142,7 @@ const Portfolio: React.FC = () => {
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  {t('portfolio.view_project')}
+                  {t("portfolio.view_project")}
                   <ArrowTopRightOnSquareIcon className="ml-2 h-4 w-4" />
                 </motion.a>
               </div>
