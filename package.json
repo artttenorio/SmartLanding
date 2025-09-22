@@ -2,7 +2,6 @@
   "name": "smartlanding",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artttenorio.github.io/SmartLanding",
   "dependencies": {
     "@headlessui/react": "^2.2.8",
     "@heroicons/react": "^2.2.0",
@@ -29,9 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -56,5 +53,8 @@
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
+  },
+  "engines": {
+    "node": "16"
   }
 }
