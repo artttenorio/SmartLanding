@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { EyeIcon } from '@heroicons/react/24/outline';
-import { templates } from '../data/templates';
-import { Template } from '../types';
-import TemplateModal from './TemplateModal';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { EyeIcon } from "@heroicons/react/24/outline";
+import { templates } from "../data/templates";
+import { Template } from "../types";
+import TemplateModal from "./TemplateModal";
 
 const Templates: React.FC = () => {
-  const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(null);
+  const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(
+    null
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [filter, setFilter] = useState<string>('all');
+  const [filter, setFilter] = useState<string>("all");
 
-  const categories = ['all', ...Array.from(new Set(templates.map(t => t.category)))];
+  const categories = [
+    "all",
+    ...Array.from(new Set(templates.map((t) => t.category))),
+  ];
 
-  const filteredTemplates = filter === 'all'
-    ? templates
-    : templates.filter(template => template.category === filter);
+  const filteredTemplates =
+    filter === "all"
+      ? templates
+      : templates.filter((template) => template.category === filter);
 
   const openModal = (template: Template) => {
     setSelectedTemplate(template);
@@ -31,9 +37,9 @@ const Templates: React.FC = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -42,9 +48,9 @@ const Templates: React.FC = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6
-      }
-    }
+        duration: 0.6,
+      },
+    },
   };
 
   return (
@@ -62,7 +68,8 @@ const Templates: React.FC = () => {
             Premium Website Templates
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hand-crafted, responsive templates designed to help your business stand out and convert visitors into customers.
+            Hand-crafted, responsive templates designed to help your business
+            stand out and convert visitors into customers.
           </p>
         </motion.div>
 
@@ -81,11 +88,11 @@ const Templates: React.FC = () => {
                 onClick={() => setFilter(category)}
                 className={`px-6 py-3 rounded-md text-sm font-medium transition-all duration-200 ${
                   filter === category
-                    ? 'bg-white text-primary-600 shadow-sm'
-                    : 'text-gray-500 hover:text-gray-700'
+                    ? "bg-white text-primary-600 shadow-sm"
+                    : "text-gray-500 hover:text-gray-700"
                 }`}
               >
-                {category === 'all' ? 'All Templates' : category}
+                {category === "all" ? "All Templates" : category}
               </button>
             ))}
           </div>
@@ -144,7 +151,9 @@ const Templates: React.FC = () => {
 
               {/* Template Info */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{template.name}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {template.name}
+                </h3>
 
                 {/* Highlights */}
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -184,10 +193,11 @@ const Templates: React.FC = () => {
             Can't find what you're looking for?
           </h3>
           <p className="text-gray-600 mb-6">
-            We're constantly adding new templates. Contact us for custom solutions.
+            We're constantly adding new templates. Contact us for custom
+            solutions.
           </p>
           <motion.a
-            href="mailto:hello@smartlanding.com"
+            href="mailto:smartlanding.dev@gmail.com"
             className="inline-flex items-center px-8 py-4 bg-accent-500 text-white rounded-lg text-lg font-medium hover:bg-accent-600 transition-colors duration-200 shadow-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

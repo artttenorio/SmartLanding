@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React from "react";
+import { Helmet } from "react-helmet-async";
 
 interface SEOProps {
   title?: string;
@@ -10,11 +10,11 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'SmartLanding — Beautiful Website Templates for Companies',
-  description = 'Launch professional company websites in hours — not weeks. High-converting templates, customizable, and battle-tested for businesses of all sizes.',
-  keywords = 'website templates, company websites, business templates, landing pages, responsive templates, react templates, tailwind templates',
-  image = 'https://smartlanding.com/og-image.jpg',
-  url = 'https://smartlanding.com'
+  title = "SmartLanding — Beautiful Website Templates for Companies",
+  description = "Launch professional company websites in hours — not weeks. High-converting templates, customizable, and battle-tested for businesses of all sizes.",
+  keywords = "website templates, company websites, business templates, sites, responsive templates, react templates, tailwind templates",
+  image = "https://smartlanding.com/og-image.jpg",
+  url = "https://smartlanding.com",
 }) => {
   return (
     <Helmet>
@@ -51,20 +51,20 @@ const SEO: React.FC<SEOProps> = ({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "SmartLanding",
-          "url": url,
-          "description": description,
-          "logo": `${url}/logo.png`,
-          "sameAs": [
+          name: "SmartLanding",
+          url: url,
+          description: description,
+          logo: `${url}/logo.png`,
+          sameAs: [
             "https://twitter.com/smartlanding",
             "https://linkedin.com/company/smartlanding",
-            "https://github.com/smartlanding"
+            "https://github.com/smartlanding",
           ],
-          "contactPoint": {
+          contactPoint: {
             "@type": "ContactPoint",
-            "email": "hello@smartlanding.com",
-            "contactType": "customer service"
-          }
+            email: "smartlanding.dev@gmail.com",
+            contactType: "customer service",
+          },
         })}
       </script>
 
@@ -72,24 +72,24 @@ const SEO: React.FC<SEOProps> = ({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
-          "name": "SmartLanding Website Templates",
-          "description": description,
-          "brand": {
+          name: "SmartLanding Website Templates",
+          description: description,
+          brand: {
             "@type": "Brand",
-            "name": "SmartLanding"
+            name: "SmartLanding",
           },
-          "offers": {
+          offers: {
             "@type": "AggregateOffer",
-            "priceCurrency": "USD",
-            "lowPrice": "69",
-            "highPrice": "299",
-            "offerCount": "50+"
+            priceCurrency: "USD",
+            lowPrice: "69",
+            highPrice: "299",
+            offerCount: "50+",
           },
-          "aggregateRating": {
+          aggregateRating: {
             "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "1000+"
-          }
+            ratingValue: "4.9",
+            reviewCount: "1000+",
+          },
         })}
       </script>
     </Helmet>

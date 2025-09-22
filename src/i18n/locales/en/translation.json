@@ -20,25 +20,37 @@
     "title": "Our Services",
     "subtitle": "Choose the perfect solution for your business needs",
     "landing_pages": {
-      "title": "Landing Pages",
-      "intermediary": {
-        "title": "Intermediary",
-        "description": "Everything from Basic +",
+      "title": "Websites",
+      "basic": {
+        "title": "Basic",
+        "description": "Ideal for those who need a quick and professional online presence.",
         "features": [
-          "Integration with email marketing tools (Mailchimp, Brevo, ConvertKit etc.)",
-          "Configured lead capture form"
+          "Modern and responsive design (works perfectly on mobile, tablet, and desktop)",
+          "Pre-configured social media links",
+          "Fast and lightweight website"
+        ]
+      },
+      "intermediary": {
+        "title": "Intermediate",
+        "description": "Perfect for those who want to turn visitors into leads.",
+        "features": [
+          "Everything from Basic +",
+          "Lead capture form already configured",
+          "Integration with email marketing tools (Mailchimp, Brevo, ConvertKit, etc.)"
         ]
       },
       "premium": {
         "title": "Premium",
-        "description": "Everything from Intermediary +",
+        "description": "The right choice for those looking for advanced results.",
         "features": [
-          "More advanced design (custom colors, visual identity, optimized images)",
-          "Basic SEO (meta tags, structure optimized for search engines)",
-          "Simple A/B testing to compare versions of the page"
+          "Everything from Intermediate +",
+          "Advanced design (custom colors, visual identity, optimized images)",
+          "Basic SEO (meta tags, optimized structure for search engines)",
+          "Simple A/B testing to compare page versions"
         ]
       }
     },
+
     "basic_apps": {
       "title": "Basic Apps (No-code)",
       "digital_catalog": {
@@ -98,7 +110,7 @@
       },
       {
         "question": "How do I get started?",
-        "answer": "Simply contact us at hello@smartlanding.com and we'll discuss your specific needs and provide a customized solution."
+        "answer": "Simply contact us at smartlanding.dev@gmail.com and we'll discuss your specific needs and provide a customized solution."
       },
       {
         "question": "What's included in the Premium Landing Page service?",

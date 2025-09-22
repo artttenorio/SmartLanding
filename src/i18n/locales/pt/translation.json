@@ -11,8 +11,8 @@
     "cta": "Começar"
   },
   "hero": {
-    "title": "Crie Landing Pages Profissionais que Convertem",
-    "subtitle": "Crie landing pages incríveis e de alta conversão e aplicativos simples para o seu negócio. Sem necessidade de programação.",
+    "title": "Crie Sites Profissionais Para Seu Negócio que Convertem",
+    "subtitle": "Crie sites incríveis e de alta conversão e o seu negócio. Deixe todo o trabalho conosco.",
     "cta": "Começar",
     "secondary_cta": "Ver Serviços"
   },
@@ -20,19 +20,30 @@
     "title": "Nossos Serviços",
     "subtitle": "Escolha a solução perfeita para as necessidades do seu negócio",
     "landing_pages": {
-      "title": "Landing Pages",
+      "title": "Sites ",
+      "basic": {
+        "title": "Básico",
+        "description": "Ideal para quem precisa de uma presença online rápida e profissional.",
+        "features": [
+          "Design moderno e responsivo (funciona bem no celular, tablet e computador",
+          "Links para redes sociais já configurados",
+          "Site leve e rápido"
+        ]
+      },
       "intermediary": {
         "title": "Intermediário",
-        "description": "Tudo do Básico +",
+        "description": "Perfeito para quem quer transformar visitas em clientes.",
         "features": [
-          "Integração com ferramentas de email marketing (Mailchimp, Brevo, ConvertKit etc.)",
-          "Formulário de captura de leads configurado"
+          "Tudo do Básico +",
+          "Formulário de captura de leads configurado",
+          "Integração com ferramentas de e-mail marketing (Mailchimp, Brevo, ConvertKit etc.)"
         ]
       },
       "premium": {
         "title": "Premium",
-        "description": "Tudo do Intermediário +",
+        "description": "A escolha certa para quem busca resultados mais avançados.",
         "features": [
+          "Tudo do Intermediario +",
           "Design mais avançado (cores personalizadas, identidade visual, imagens otimizadas)",
           "SEO básico (meta tags, estrutura otimizada para mecanismos de busca)",
           "Teste A/B simples para comparar versões da página"
@@ -98,7 +109,7 @@
       },
       {
         "question": "Como posso começar?",
-        "answer": "Simplesmente entre em contato conosco em hello@smartlanding.com e discutiremos suas necessidades específicas e forneceremos uma solução personalizada."
+        "answer": "Simplesmente entre em contato conosco em smartlanding.dev@gmail.com e discutiremos suas necessidades específicas e forneceremos uma solução personalizada."
       },
       {
         "question": "O que está incluído no serviço Premium de Landing Page?",

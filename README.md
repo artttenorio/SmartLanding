@@ -24,17 +24,20 @@ A polished, responsive single-page landing site that advertises and showcases pr
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/smartlanding.git
    cd smartlanding
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install --legacy-peer-deps
    ```
 
 3. **Start the development server**
+
    ```bash
    npm start
    ```
@@ -135,6 +138,7 @@ Creates a `build` folder with optimized production files.
 ### Netlify (Recommended)
 
 1. **Build the project**
+
    ```bash
    npm run build
    ```
@@ -146,6 +150,7 @@ Creates a `build` folder with optimized production files.
 ### Vercel
 
 1. **Install Vercel CLI**
+
    ```bash
    npm i -g vercel
    ```
@@ -201,7 +206,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Email**: hello@smartlanding.com
+- **Email**:smartlanding.dev@gmail.com
 - **Documentation**: [docs.smartlanding.com](https://docs.smartlanding.com)
 - **Issues**: [GitHub Issues](https://github.com/yourusername/smartlanding/issues)
 

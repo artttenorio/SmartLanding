@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDownIcon } from '@heroicons/react/24/outline';
-import { useTranslation } from 'react-i18next';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { useTranslation } from "react-i18next";
 
 const FAQ: React.FC = () => {
   const { t } = useTranslation();
@@ -11,7 +11,7 @@ const FAQ: React.FC = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const faqData = t('faq.questions', { returnObjects: true }) as Array<{
+  const faqData = t("faq.questions", { returnObjects: true }) as Array<{
     question: string;
     answer: string;
   }>;
@@ -28,11 +28,9 @@ const FAQ: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            {t('faq.title')}
+            {t("faq.title")}
           </h2>
-          <p className="text-xl text-gray-600">
-            {t('faq.subtitle')}
-          </p>
+          <p className="text-xl text-gray-600">{t("faq.subtitle")}</p>
         </motion.div>
 
         {/* FAQ Items */}
@@ -72,7 +70,7 @@ const FAQ: React.FC = () => {
                 {openIndex === index && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
+                    animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
@@ -98,30 +96,30 @@ const FAQ: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            {t('faq.contact_section.title')}
+            {t("faq.contact_section.title")}
           </h3>
           <p className="text-gray-600 mb-6">
-            {t('faq.contact_section.description')}
+            {t("faq.contact_section.description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
-              href="mailto:hello@smartlanding.com"
+              href="mailto:smartlanding.dev@gmail.com"
               className="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {t('faq.contact_section.email_button')}
+              {t("faq.contact_section.email_button")}
             </motion.a>
             <motion.button
               onClick={() => {
-                const element = document.getElementById('contact');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
+                const element = document.getElementById("contact");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
               className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {t('faq.contact_section.contact_button')}
+              {t("faq.contact_section.contact_button")}
             </motion.button>
           </div>
         </motion.div>

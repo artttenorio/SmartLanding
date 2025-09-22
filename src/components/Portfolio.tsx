@@ -158,7 +158,7 @@ const Portfolio: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <motion.a
-            href="mailto:hello@smartlanding.com"
+            href="mailto:smartlanding.dev@gmail.com"
             className="inline-flex bg-primary-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-primary-700 transition-colors duration-200"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

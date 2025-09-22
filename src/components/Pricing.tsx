@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { CheckIcon } from '@heroicons/react/24/outline';
-import { pricingTiers } from '../data';
+import React from "react";
+import { motion } from "framer-motion";
+import { CheckIcon } from "@heroicons/react/24/outline";
+import { pricingTiers } from "../data";
 
 const Pricing: React.FC = () => {
   const containerVariants = {
@@ -9,9 +9,9 @@ const Pricing: React.FC = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -20,9 +20,9 @@ const Pricing: React.FC = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6
-      }
-    }
+        duration: 0.6,
+      },
+    },
   };
 
   return (
@@ -40,7 +40,8 @@ const Pricing: React.FC = () => {
             Simple, Transparent Pricing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choose the license that fits your needs. All plans include lifetime access and updates.
+            Choose the license that fits your needs. All plans include lifetime
+            access and updates.
           </p>
         </motion.div>
 
@@ -57,8 +58,8 @@ const Pricing: React.FC = () => {
               key={tier.id}
               className={`relative bg-white rounded-2xl shadow-lg p-8 ${
                 tier.popular
-                  ? 'ring-2 ring-primary-600 transform scale-105'
-                  : 'hover:shadow-xl'
+                  ? "ring-2 ring-primary-600 transform scale-105"
+                  : "hover:shadow-xl"
               } transition-all duration-300`}
               variants={itemVariants}
               whileHover={!tier.popular ? { y: -5 } : {}}
@@ -80,7 +81,9 @@ const Pricing: React.FC = () => {
 
                 {/* Price */}
                 <div className="flex items-center justify-center">
-                  <span className="text-5xl font-bold text-gray-900">${tier.price}</span>
+                  <span className="text-5xl font-bold text-gray-900">
+                    ${tier.price}
+                  </span>
                   <span className="text-gray-500 ml-2">one-time</span>
                 </div>
               </div>
@@ -97,11 +100,11 @@ const Pricing: React.FC = () => {
 
               {/* CTA Button */}
               <motion.a
-                href="mailto:hello@smartlanding.com"
+                href="mailto:smartlanding.dev@gmail.com"
                 className={`w-full block text-center py-4 px-6 rounded-lg font-medium transition-colors duration-200 ${
                   tier.popular
-                    ? 'bg-primary-600 text-white hover:bg-primary-700'
-                    : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+                    ? "bg-primary-600 text-white hover:bg-primary-700"
+                    : "bg-gray-100 text-gray-800 hover:bg-gray-200"
                 }`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -110,11 +113,13 @@ const Pricing: React.FC = () => {
               </motion.a>
 
               {/* Background Decoration */}
-              <div className={`absolute bottom-0 left-0 right-0 h-1 ${
-                tier.popular
-                  ? 'bg-gradient-to-r from-primary-600 to-accent-400'
-                  : 'bg-gray-200'
-              } rounded-b-2xl`}></div>
+              <div
+                className={`absolute bottom-0 left-0 right-0 h-1 ${
+                  tier.popular
+                    ? "bg-gradient-to-r from-primary-600 to-accent-400"
+                    : "bg-gray-200"
+                } rounded-b-2xl`}
+              ></div>
             </motion.div>
           ))}
         </motion.div>
@@ -130,25 +135,33 @@ const Pricing: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-2xl font-bold text-primary-600 mb-2">✓</div>
-              <h4 className="font-semibold text-gray-900 mb-1">Lifetime Access</h4>
+              <h4 className="font-semibold text-gray-900 mb-1">
+                Lifetime Access
+              </h4>
               <p className="text-sm text-gray-600">Download and use forever</p>
             </div>
 
             <div>
               <div className="text-2xl font-bold text-primary-600 mb-2">✓</div>
               <h4 className="font-semibold text-gray-900 mb-1">Free Updates</h4>
-              <p className="text-sm text-gray-600">Get all future improvements</p>
+              <p className="text-sm text-gray-600">
+                Get all future improvements
+              </p>
             </div>
 
             <div>
               <div className="text-2xl font-bold text-primary-600 mb-2">✓</div>
-              <h4 className="font-semibold text-gray-900 mb-1">30-Day Refund</h4>
+              <h4 className="font-semibold text-gray-900 mb-1">
+                30-Day Refund
+              </h4>
               <p className="text-sm text-gray-600">Money-back guarantee</p>
             </div>
 
             <div>
               <div className="text-2xl font-bold text-primary-600 mb-2">✓</div>
-              <h4 className="font-semibold text-gray-900 mb-1">Expert Support</h4>
+              <h4 className="font-semibold text-gray-900 mb-1">
+                Expert Support
+              </h4>
               <p className="text-sm text-gray-600">Help when you need it</p>
             </div>
           </div>
@@ -167,8 +180,8 @@ const Pricing: React.FC = () => {
           </p>
           <motion.button
             onClick={() => {
-              const element = document.getElementById('faq');
-              if (element) element.scrollIntoView({ behavior: 'smooth' });
+              const element = document.getElementById("faq");
+              if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
             className="text-primary-600 font-medium hover:text-primary-700 transition-colors duration-200"
             whileHover={{ scale: 1.05 }}

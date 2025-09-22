@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useTranslation } from 'react-i18next';
-import LanguageToggle from './LanguageToggle';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useTranslation } from "react-i18next";
+import LanguageToggle from "./LanguageToggle";
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -14,32 +14,30 @@ const Header: React.FC = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     }
   };
 
   const navItems = [
-    { label: t('header.nav.services'), id: 'services' },
-    { label: t('header.nav.portfolio'), id: 'portfolio' },
-    { label: t('header.nav.features'), id: 'features' },
-    { label: t('header.nav.faq'), id: 'faq' },
-    { label: t('header.nav.contact'), id: 'contact' }
+    { label: t("header.nav.services"), id: "services" },
+    { label: t("header.nav.portfolio"), id: "portfolio" },
+    { label: t("header.nav.features"), id: "features" },
+    { label: t("header.nav.faq"), id: "faq" },
+    { label: t("header.nav.contact"), id: "contact" },
   ];
 
   return (
     <motion.header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
+        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -51,7 +49,7 @@ const Header: React.FC = () => {
           <motion.div
             className="flex-shrink-0 cursor-pointer"
             whileHover={{ scale: 1.05 }}
-            onClick={() => scrollToSection('hero')}
+            onClick={() => scrollToSection("hero")}
           >
             <div className="flex items-center">
               <svg
@@ -61,8 +59,12 @@ const Header: React.FC = () => {
               >
                 <path d="M13 3L4 14h7v7l9-11h-7V3z" />
               </svg>
-              <span className={`ml-2 text-xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                {t('header.brand')}
+              <span
+                className={`ml-2 text-xl font-bold ${
+                  isScrolled ? "text-gray-900" : "text-white"
+                }`}
+              >
+                {t("header.brand")}
               </span>
             </div>
           </motion.div>
@@ -74,7 +76,7 @@ const Header: React.FC = () => {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`text-sm font-medium transition-colors duration-200 hover:text-primary-600 ${
-                  isScrolled ? 'text-gray-700' : 'text-white/90'
+                  isScrolled ? "text-gray-700" : "text-white/90"
                 }`}
               >
                 {item.label}
@@ -87,19 +89,19 @@ const Header: React.FC = () => {
             <LanguageToggle isScrolled={isScrolled} />
 
             <motion.a
-              href="mailto:hello@smartlanding.com"
+              href="mailto:smartlanding.dev@gmail.com"
               className="hidden sm:inline-flex bg-primary-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {t('header.cta')}
+              {t("header.cta")}
             </motion.a>
 
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`md:hidden p-2 rounded-md ${
-                isScrolled ? 'text-gray-700' : 'text-white'
+                isScrolled ? "text-gray-700" : "text-white"
               }`}
             >
               {isMobileMenuOpen ? (
@@ -113,11 +115,11 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         <motion.div
-          className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}
+          className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
           initial={{ opacity: 0, height: 0 }}
           animate={{
             opacity: isMobileMenuOpen ? 1 : 0,
-            height: isMobileMenuOpen ? 'auto' : 0
+            height: isMobileMenuOpen ? "auto" : 0,
           }}
           transition={{ duration: 0.3 }}
         >
@@ -132,10 +134,10 @@ const Header: React.FC = () => {
               </button>
             ))}
             <a
-              href="mailto:hello@smartlanding.com"
+              href="mailto:smartlanding.dev@gmail.com"
               className="block bg-primary-600 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-primary-700 text-center mt-4"
             >
-              {t('header.cta')}
+              {t("header.cta")}
             </a>
           </div>
         </motion.div>
