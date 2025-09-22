@@ -20,10 +20,9 @@ const Portfolio: React.FC = () => {
       id: 2,
       title: t("portfolio.projects.1.title"),
       description: t("portfolio.projects.1.description"),
-      image:
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop&crop=center",
-      url: "https://example.com/restaurant",
-      category: "Restaurant",
+      image: "images/wine.jpg",
+      url: "https://wine-gallery-xi.vercel.app/",
+      category: "Wine Gallery",
     },
     {
       id: 3,
