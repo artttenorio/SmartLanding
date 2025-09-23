@@ -13,7 +13,7 @@ const Portfolio: React.FC = () => {
       description: t("portfolio.projects.0.description"),
       image:
         "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop&crop=center",
-      url: "https://smart-landing-curso-online.vercel.app/",
+      url: "https://course.smartlanding.com.br/",
       category: "Education",
     },
     {
@@ -21,7 +21,7 @@ const Portfolio: React.FC = () => {
       title: t("portfolio.projects.1.title"),
       description: t("portfolio.projects.1.description"),
       image: "images/wine.jpg",
-      url: "https://wine-gallery-xi.vercel.app/",
+      url: "wine.smartlanding.com.br",
       category: "Wine Gallery",
     },
     {
