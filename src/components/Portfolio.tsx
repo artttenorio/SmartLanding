@@ -21,7 +21,7 @@ const Portfolio: React.FC = () => {
       title: t("portfolio.projects.1.title"),
       description: t("portfolio.projects.1.description"),
       image: "images/wine.jpg",
-      url: "wine.smartlanding.com.br",
+      url: "https://wine.smartlanding.com.br/",
       category: "Wine Gallery",
     },
     {
